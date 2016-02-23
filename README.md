@@ -34,7 +34,7 @@ When using CSS classes, you can simply add the class with the filter name to the
 
 For example:
 
-```
+```html
 <!-- HTML -->
 <figure class="aden">
   <img src="../img.png">
@@ -63,6 +63,8 @@ _For use in HTML markup:_
 *   Nashville: `class="nashville"`
 *   Lark: `class="lark"`
 *   Moon: `class="moon"`
+*   Clarendon: `class="clarendon"`
+*   Willow: `class="willow"`
 
 * * *
 
@@ -76,14 +78,14 @@ If you use custom naming in your CSS architecture, you can add the `.scss` files
 
 For example:
 
-```
+```html
 <!-- HTML -->
 <figure class="viz--beautiful">
   <img src="../img.png">
 </figure>
 ```
 
-```
+```sass
 // Sass
 .viz--beautiful {
   @extend %aden;
@@ -112,6 +114,8 @@ _For use in Sass stylesheets:_
 *   Nashville: `@extend %nashville`
 *   Lark: `@extend %lark`
 *   Moon: `@extend %moon`
+*   Clarendon: `@extend %clarendon`
+*   Willow: `@extend %willow`
 
 ## Contributing
 
@@ -130,16 +134,27 @@ Or:
 
 If you’d like to contribute, the following filters are yet to be added:
 
+- [ ] [Amaro](https://github.com/una/CSSgram/issues/13)
+- [ ] [Ashby](https://github.com/una/CSSgram/issues/119)
+- [ ] [Brannan](https://github.com/una/CSSgram/issues/120)
 - [ ] [Charmes](https://github.com/una/CSSgram/issues/22)
-- [ ] [Stinsen](https://github.com/una/CSSgram/issues/21)
-- [ ] [Kelvin](https://github.com/una/CSSgram/issues/20)
-- [ ] [Sutro](https://github.com/una/CSSgram/issues/19)
+- [ ] [Crema](https://github.com/una/CSSgram/issues/12)
+- [ ] [Dogpatch](https://github.com/una/CSSgram/issues/122)
+- [ ] [Ginza](https://github.com/una/CSSgram/issues/123)
 - [ ] [Hefe](https://github.com/una/CSSgram/issues/17)
-- [ ] [Valencia](https://github.com/una/CSSgram/issues/16)
+- [ ] [Helena](https://github.com/una/CSSgram/issues/124)
+- [ ] [Juno](https://github.com/una/CSSgram/issues/125)
+- [ ] [Kelvin](https://github.com/una/CSSgram/issues/20)
+- [ ] [Ludwig](https://github.com/una/CSSgram/issues/126)
+- [ ] [Maven](https://github.com/una/CSSgram/issues/127)
 - [ ] [Rise](https://github.com/una/CSSgram/issues/15)
 - [ ] [Sierra](https://github.com/una/CSSgram/issues/14)
-- [ ] [Amaro](https://github.com/una/CSSgram/issues/13)
-- [ ] [Crema](https://github.com/una/CSSgram/issues/12)
+- [ ] [Skyline](https://github.com/una/CSSgram/issues/128)
+- [ ] [Slumber](https://github.com/una/CSSgram/issues/129)
+- [ ] [Stinsen](https://github.com/una/CSSgram/issues/21)
+- [ ] [Sutro](https://github.com/una/CSSgram/issues/19)
+- [ ] [Valencia](https://github.com/una/CSSgram/issues/16)
+- [ ] [Vesper](https://github.com/una/CSSgram/issues/130)
 
 Filters are really fun to create! Reference photos created by [Miles Croxford](https://twitter.com/milescroxford) can be found [here](https://instagram.com/cssgram/).
 
@@ -148,6 +163,6 @@ Filters are really fun to create! Reference photos created by [Miles Croxford](h
 - `source/css/cssgram.css` contains each of the CSS classes you can apply to your `<img>` to give it the filter. You should use `source/css/cssgram.min.css` for production if you want access to all of the library
 - `source/scss/` contains the source files for individual classes and placeholder selectors you can use to extend CSS classes in Sass
 - `site/` is the public facing website
-- `site/test` is how you test filters if you're developing, remember to change `is_done` for the filter you're creating in `site/test/index.twig` whilst gulp is running.
+- `site/test` is how you test filters if you're developing, remember to change `is_done` for the filter you're creating in `site/filters.json`.
 
 Note: this will also have mixin options and a PostCSS Component.
